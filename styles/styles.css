@@ -140,6 +140,10 @@ html {
   font-size: 62.5%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font: var(--type-body-1-default-font);
   letter-spacing: var(--type-body-1-default-letter-spacing);
@@ -380,4 +384,16 @@ main .section {
 main .section.light,
 main .section.highlight {
   background-color: var(--color-neutral-500);
+}
+
+
+/* Z pattern Layer 2*/
+
+.z-pattern.layer-2.block > div {
+  display: flex;
+}
+
+.z-pattern.layer-2.block > div > div {
+  flex: 1 0 50%;
+  padding: 10px;
 }
